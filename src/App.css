@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+  background-color: #fbfaf8;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.top{
+  height: 400px;
+  background-color: var(--global-text-color);
+  background-size: cover;
+  min-width: 100%;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center center;
+  background-color: #ddd;
+  background-position: center center;
+  background-size: cover;
+  background: #000;
+  background-size: auto;
+  background-position: 51% 38%;
+  background-image: url('https://remoteok.com/assets/valley-bg.jpg');
+}
+.top-bar .remote-ok-logo, .top-bar .remote-ok-logo h1, .top-bar .remote-ok-logo a, .header .remote-ok-logo, .header .remote-ok-logo h1, .header .remote-ok-logo a, .top .remote-ok-logo, .top .remote-ok-logo h1, .top .remote-ok-logo a {
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  top: 0.2em;
+  text-align: center;
+  border: none;
+}.remote-ok-logo h2, .remote-ok-logo h1 {
+  font-size: 2em;
+  color: var(--global-text-color);
+  margin: 0;
+  margin-top: -0.5em;
+  margin-bottom: 0.35em;
+}
+ .top .box {
+  top: 16% !important;
+}
+ .top .box h1 {
+  opacity: 1;
+  color: #fff !important;
+  letter-spacing: -1px;
+  display: block;
+  font-size: 3em;
+}
+.top .box .search {
+  color: var(--global-text-color);
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  font-size: 1.5em;
+  padding: 0.5em;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  text-align: center;
+  background: 0 0;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  text-align: left;
+  color: #0f1115;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.25);
+  padding-left: 2.5em;
+  background-image: url(https://remoteok.com/assets/search-black.png);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 0.75em center;
+  width: 400px;
+  max-width: 80vw;
+  border-radius: 100px;
+  border: none;
+  box-shadow: var(--box-shadow-central);
+}
+.top-right-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 14px;
+  padding-right: 14px;
+  padding-left: 14px;
+  z-index: 12;
+  padding-right: 185px;
+}
+.button.action-post-job {
+  background: #ff4742;
+  border: 2px solid #ff4742;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+}
+.App-header {
+  background-color: #ebeef4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#jobsboard tr.job {
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: none;
+}
+
+table#jobsboard tr.job td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  vertical-align: middle;
+  padding: 7px;
+}
+.apply_button {
+  z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  border: 2px solid transparent;
+  vertical-align: middle;
+  font-weight: 800;
+  display: inline-block;
+  width: 100%;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  position: absolute;
+  right: 21px;
+  top: 0.65em;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  border-radius: 12px;
+}
+#jobsboard tr .location {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .75em;
+  background: #737373;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  padding: 0;
+  padding-right: 0.35em;
+  padding-left: 0.35em;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 16em;
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  background: #ddd;
+  font-size: 10px;
+  font-size: 12px;
+  padding: 1.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: 800;
+  color: #0f1115;
+  text-transform: none;
+  font-weight: 400;
+  border-radius: 32px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #393939;
+  margin: 3.5px;
+  margin-left: 0;
+  margin-right: 7px;
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+table#jobsboard tr.job td.image {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+table#jobsboard tr td.image {
+  max-width: calc(60px + 14px);
+  text-align: center;
+  width: 74px;
+}
+#jobsboard {
+  width: 100%;
+  max-width: 1100px;
+  margin: 14px auto;
+  margin-bottom: 3em;
+  border-spacing: 0;
+}
+table#jobsboard tr.job td {
+  vertical-align: middle;
+  padding: 7px;
+}
+
+#jobsboard .position {
+  max-width: 20em;
+}
+#jobsboard .company {
+  height: 4em;
+  height: 5em;
+  padding: 0;
+  padding-left: 0;
+}
+#jobsboard th, #jobsboard td {
+  padding: 0.75em;
+  padding-bottom: 21px;
+  padding-top: 21px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+}
+.apply_button p {
+  display: inline-block;
+  margin: 0;
+  opacity: 0;
+  vertical-align: middle;
+  line-height: 2;
+  vertical-align: middle;
+  text-align: right;
+}
+.action-add-tag {
+  cursor: cell;
+}
+a {
+  color: #0f1115;
+  text-decoration: none !important;
+}
+#jobsboard tr span.verified {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .75em;
+  background: #36e67f;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0;
+  padding-right: 0.35em;
+  padding-left: 0.35em;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+  font-size: 12px;
+  padding: 1.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+span.original {
+  cursor: pointer;
+}
+.position h2, .company h3 {
+  display: inline;
+}
+#jobsboard .position h2, #jobsboard .company h3 {
+  font-size: 17px;
+}
+#jobsboard td.position h2 {
+  line-height: 1.5;
+}
+#jobsboard .tags .tag h3 {
+  cursor: cell;
+  margin: 0;
+  font-size: .7em;
+  font-weight: 800;
+}
+#jobsboard .tags .tag h3 {
+  font-size: 12px;
+}
+#jobsboard .image .logo {
+  overflow: hidden;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  margin-right: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  object-fit: scale-down;
+  object-position: center;
+  border-radius: 12px;
+  border-radius: 100%;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.03);
+  width: 60px;
+  height: 60px;
+}
+table#jobsboard tr td.image {
+  border-left: 1px solid #dddddd;
+}
+#jobsboard .position {
+  max-width: 20em;
+}
+#jobsboard td.tags {
+  min-width: 10em;
+  max-width: 16em;
+  padding: 0;
+  margin: 0;
+  padding-left: 0.5em;
+  color: var(--global-text-color);
+}
+#jobsboard .tags .tag {
+  border: 2px solid #0f1115;
+  color: #0f1115;
+}
+#jobsboard .tags .tag, table.trends .tag {
+  border: 2px solid #0f1115;
+  border-radius: 12px;
+  display: table;
+  padding: 0.33em;
+  padding: 7px;
+  margin: 0.2em;
+  margin: 3.5px;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+  background-color: #fff;
+  border-color: #003399 !important;
+  color: #003399 !important;
+}
+#jobsboard td.source {
+  text-align: right;
+  width: 10em;
+}
+
+table#jobsboard tr.sw-insert td:last-of-type, table#jobsboard tr.job td:last-of-type {
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border-right: 1px solid #dddddd;
+}
+table#jobsboard tr.sw-insert td:nth-of-type(1), table#jobsboard tr.job td:nth-of-type(1) {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  border-left: 1px solid #dddddd;
+
+}
