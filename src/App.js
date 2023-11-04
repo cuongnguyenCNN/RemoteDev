@@ -213,7 +213,7 @@ function App() {
         <table id="jobsboard">
           <thead>
             <tr>
-              <th colSpan="10" class="filter-actions" style={{padding:0}} >
+              <th colSpan="10" class="filter-actions" style={{ padding: 0 }}>
                 <div class="top-bar-avatar">
                   <img
                     class="top-bar-avatar-img"
@@ -231,48 +231,195 @@ function App() {
                   <div class="search-filter-input-icon-circle">
                     <div class="search-filter-input-icon"></div>
                   </div>
-                  <div class="search-filter-results" style={{position: "absolute", left: "468.641px", top: "69px", display: "none"}}>
-                  <div data-add="yes" data-tag="engineer" data-slug="engineer">🤓 Engineer</div>
-                  <div data-add="yes" data-tag="exec" data-slug="exec">💼 Executive</div>
-                  <div data-add="yes" data-tag="senior" data-slug="senior">👵 Senior</div>
-                  <div data-add="yes" data-tag="dev" data-slug="dev">🤓 Developer</div>
-                  <div data-add="yes" data-tag="finance" data-slug="finance">💰 Finance</div>
-                  <div data-add="yes" data-tag="sys-admin" data-slug="sys-admin">♾️ Sys Admin</div>
-                  <div data-add="yes" data-tag="javascript" data-slug="javascript">☕️ JavaScript</div>
-                  <div data-add="yes" data-tag="backend" data-slug="backend">🍑 Backend</div>
-                  <div data-add="yes" data-tag="golang" data-slug="golang">🐀 Golang</div>
-                  <div data-add="yes" data-tag="cloud" data-slug="cloud">☁️ Cloud</div>
-                  <div data-add="yes" data-tag="medical" data-slug="medical">🚑 Medical</div>
-                  <div data-add="yes" data-tag="front-end" data-slug="front-end">🎨 Front End</div>
-                  <div data-add="yes" data-tag="full-stack" data-slug="full-stack">🥞 Full Stack</div>
-                  <div data-add="yes" data-tag="ops" data-slug="ops">♾️ Ops</div><div data-add="yes" data-tag="design" data-slug="design">🎨 Design</div>
-                  <div data-add="yes" data-tag="react" data-slug="react">⚛️ React</div>
-                  <div data-add="yes" data-tag="infosec" data-slug="infosec">🔑 InfoSec</div>
-                  <div data-add="yes" data-tag="marketing" data-slug="marketing">🚥 Marketing</div>
-                  <div data-add="yes" data-tag="mobile" data-slug="mobile">📱 Mobile</div>
-                  <div data-add="yes" data-tag="content-writing" data-slug="content-writing">✍️ Content Writing</div>
-                  <div data-add="yes" data-tag="saas" data-slug="saas">📦 SaaS</div>
-                  <div data-add="yes" data-tag="recruiter" data-slug="recruiter">🎯 Recruiter</div>
-                  <div data-add="yes" data-tag="full-time" data-slug="full-time">⏰ Full Time</div>
-                  <div data-add="yes" data-tag="api" data-slug="api">🤖 API</div>
-                  <div data-add="yes" data-tag="sales" data-slug="sales">💼 Sales</div>
-                  <div data-add="yes" data-tag="ruby" data-slug="ruby">💎 Ruby</div>
-                  <div data-add="yes" data-tag="education" data-slug="education">👨‍🏫 Education</div>
-                  <div data-add="yes" data-tag="devops" data-slug="devops">♾️ DevOps</div>
-                  <div data-add="yes" data-tag="stats" data-slug="stats">👩‍🔬 Stats</div>
-                  <div data-add="yes" data-tag="python" data-slug="python">🐍 Python</div>
-                  <div data-add="yes" data-tag="node" data-slug="node">🔗 Node</div>
-                  <div data-add="yes" data-tag="english" data-slug="english">🇬🇧 English</div>
-                  <div data-add="yes" data-tag="non-tech" data-slug="non-tech">🔌 Non Tech</div>
-                  <div data-add="yes" data-tag="video" data-slug="video">📼 Video</div>
-                  <div data-add="yes" data-tag="travel" data-slug="travel">🎒 Travel</div>
-                  <div data-add="yes" data-tag="quality-assurance" data-slug="quality-assurance">🔬 Quality Assurance</div>
-                  <div data-add="yes" data-tag="ecommerce" data-slug="ecommerce">🛍 Ecommerce</div>
-                  <div data-add="yes" data-tag="teaching" data-slug="teaching">👨‍🏫 Teaching</div>
-                  <div data-add="yes" data-tag="linux" data-slug="linux">🐧 Linux</div>
-                  <div data-add="yes" data-tag="java" data-slug="java">☕️ Java</div>
-                  <div data-add="yes" data-tag="crypto" data-slug="crypto">🏅 Crypto</div>
-                 </div>
+                  <div
+                    class="search-filter-results"
+                    style={{
+                      position: "absolute",
+                      left: "468.641px",
+                      top: "69px",
+                      display: "none",
+                    }}
+                  >
+                    <div
+                      data-add="yes"
+                      data-tag="engineer"
+                      data-slug="engineer"
+                    >
+                      🤓 Engineer
+                    </div>
+                    <div data-add="yes" data-tag="exec" data-slug="exec">
+                      💼 Executive
+                    </div>
+                    <div data-add="yes" data-tag="senior" data-slug="senior">
+                      👵 Senior
+                    </div>
+                    <div data-add="yes" data-tag="dev" data-slug="dev">
+                      🤓 Developer
+                    </div>
+                    <div data-add="yes" data-tag="finance" data-slug="finance">
+                      💰 Finance
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="sys-admin"
+                      data-slug="sys-admin"
+                    >
+                      ♾️ Sys Admin
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="javascript"
+                      data-slug="javascript"
+                    >
+                      ☕️ JavaScript
+                    </div>
+                    <div data-add="yes" data-tag="backend" data-slug="backend">
+                      🍑 Backend
+                    </div>
+                    <div data-add="yes" data-tag="golang" data-slug="golang">
+                      🐀 Golang
+                    </div>
+                    <div data-add="yes" data-tag="cloud" data-slug="cloud">
+                      ☁️ Cloud
+                    </div>
+                    <div data-add="yes" data-tag="medical" data-slug="medical">
+                      🚑 Medical
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="front-end"
+                      data-slug="front-end"
+                    >
+                      🎨 Front End
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="full-stack"
+                      data-slug="full-stack"
+                    >
+                      🥞 Full Stack
+                    </div>
+                    <div data-add="yes" data-tag="ops" data-slug="ops">
+                      ♾️ Ops
+                    </div>
+                    <div data-add="yes" data-tag="design" data-slug="design">
+                      🎨 Design
+                    </div>
+                    <div data-add="yes" data-tag="react" data-slug="react">
+                      ⚛️ React
+                    </div>
+                    <div data-add="yes" data-tag="infosec" data-slug="infosec">
+                      🔑 InfoSec
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="marketing"
+                      data-slug="marketing"
+                    >
+                      🚥 Marketing
+                    </div>
+                    <div data-add="yes" data-tag="mobile" data-slug="mobile">
+                      📱 Mobile
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="content-writing"
+                      data-slug="content-writing"
+                    >
+                      ✍️ Content Writing
+                    </div>
+                    <div data-add="yes" data-tag="saas" data-slug="saas">
+                      📦 SaaS
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="recruiter"
+                      data-slug="recruiter"
+                    >
+                      🎯 Recruiter
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="full-time"
+                      data-slug="full-time"
+                    >
+                      ⏰ Full Time
+                    </div>
+                    <div data-add="yes" data-tag="api" data-slug="api">
+                      🤖 API
+                    </div>
+                    <div data-add="yes" data-tag="sales" data-slug="sales">
+                      💼 Sales
+                    </div>
+                    <div data-add="yes" data-tag="ruby" data-slug="ruby">
+                      💎 Ruby
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="education"
+                      data-slug="education"
+                    >
+                      👨‍🏫 Education
+                    </div>
+                    <div data-add="yes" data-tag="devops" data-slug="devops">
+                      ♾️ DevOps
+                    </div>
+                    <div data-add="yes" data-tag="stats" data-slug="stats">
+                      👩‍🔬 Stats
+                    </div>
+                    <div data-add="yes" data-tag="python" data-slug="python">
+                      🐍 Python
+                    </div>
+                    <div data-add="yes" data-tag="node" data-slug="node">
+                      🔗 Node
+                    </div>
+                    <div data-add="yes" data-tag="english" data-slug="english">
+                      🇬🇧 English
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="non-tech"
+                      data-slug="non-tech"
+                    >
+                      🔌 Non Tech
+                    </div>
+                    <div data-add="yes" data-tag="video" data-slug="video">
+                      📼 Video
+                    </div>
+                    <div data-add="yes" data-tag="travel" data-slug="travel">
+                      🎒 Travel
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="quality-assurance"
+                      data-slug="quality-assurance"
+                    >
+                      🔬 Quality Assurance
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="ecommerce"
+                      data-slug="ecommerce"
+                    >
+                      🛍 Ecommerce
+                    </div>
+                    <div
+                      data-add="yes"
+                      data-tag="teaching"
+                      data-slug="teaching"
+                    >
+                      👨‍🏫 Teaching
+                    </div>
+                    <div data-add="yes" data-tag="linux" data-slug="linux">
+                      🐧 Linux
+                    </div>
+                    <div data-add="yes" data-tag="java" data-slug="java">
+                      ☕️ Java
+                    </div>
+                    <div data-add="yes" data-tag="crypto" data-slug="crypto">
+                      🏅 Crypto
+                    </div>
+                  </div>
                 </div>
                 <div class="location-filter">
                   <input
@@ -325,7 +472,7 @@ function App() {
                       src="https://remoteok.com/assets/times-circle.svg"
                     />
                   </div>
-                  <div class="action-remove-latest-filter" >
+                  <div class="action-remove-latest-filter">
                     ❌ Clear 20+ results
                   </div>
                 </div>
@@ -334,6 +481,215 @@ function App() {
           </thead>
           <tbody>{items}</tbody>
         </table>
+        <div
+          class="top-tags"
+        >
+          <div >
+            <a href="https://remoteok.com/hire-remotely/verified" class="tag">
+              <img
+                alt="Verified"
+                src="/assets/verified.png"
+              
+              />{" "}
+              <span>Verified</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/available-now"
+              class="tag"
+            >
+              ✅ <span>Available now</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/js" class="tag">
+              ☕️ <span>JavaScript</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/html" class="tag">
+              🔡 <span>HTML</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/react" class="tag">
+              ⚛️ <span>React</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/excel" class="tag">
+              📗 <span>Excel</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/css" class="tag">
+              🎨 <span>CSS</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/python" class="tag">
+              🐍 <span>Python</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/marketing" class="tag">
+              🚥 <span>Marketing</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/customer-support"
+              class="tag"
+            >
+              🎧 <span>Customer Support</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/node" class="tag">
+              🔗 <span>Node</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/office365" class="tag">
+              ✍️ <span>Office365</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/sql" class="tag">
+              🐬 <span>SQL</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/java" class="tag">
+              ☕️ <span>Java</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/typescript" class="tag">
+              🟦 <span>Typescript</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/mysql" class="tag">
+              🐬 <span>MySQL</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/php" class="tag">
+              🐘 <span>PHP</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/backend" class="tag">
+              🍑 <span>Backend</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/aws" class="tag">
+              ☁️ <span>AWS</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/git" class="tag">
+              📦 <span>Git</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/front-end" class="tag">
+              🎨 <span>Front End</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/mongodb" class="tag">
+              🍃 <span>Mongo</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/docker" class="tag">
+              🐳 <span>Docker</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/customer-service"
+              class="tag"
+            >
+              🎧 <span>Customer Service</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/ui" class="tag">
+              🎨 <span>UI</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/ux" class="tag">
+              🎨 <span>UX</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/writing" class="tag">
+              ✍️ <span>Writing</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/word" class="tag">
+              ✍️ <span>Word</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/sales" class="tag">
+              💼 <span>Sales</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/project-management"
+              class="tag"
+            >
+              💼 <span>Project Management</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/angular" class="tag">
+              🅰️ <span>Angular</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/data-entry" class="tag">
+              <span>Data Entry</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/vue" class="tag">
+              💚 <span>Vue</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/wordpress" class="tag">
+              ✍️ <span>Wordpress</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/postgresql" class="tag">
+              🐬 <span>PostgreSQL</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/bootstrap" class="tag">
+              🟪 <span>Bootstrap</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/c-sharp" class="tag">
+              #️⃣ <span>C Sharp</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/microsoft-office"
+              class="tag"
+            >
+              ✍️ <span>Microsoft Office</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/photoshop" class="tag">
+              🎨 <span>Photoshop</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/communication"
+              class="tag"
+            >
+              <span>Communication</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/laravel" class="tag">
+              📦 <span>Laravel</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/linux" class="tag">
+              🐧 <span>Linux</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/c-plus-plus"
+              class="tag"
+            >
+              ➕ <span>C Plus Plus</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/content-writing"
+              class="tag"
+            >
+              ✍️ <span>Content Writing</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/figma" class="tag">
+              🎨 <span>Figma</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/office-365" class="tag">
+              <span>Office 365</span>{" "}
+            </a>
+            <a
+              href="https://remoteok.com/hire-remotely/digital-marketing"
+              class="tag"
+            >
+              🚥 <span>Digital Marketing</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/frontend" class="tag">
+              🎨 <span>Front End</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/english" class="tag">
+              🇬🇧 <span>English</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/spanish" class="tag">
+              🇪🇸 <span>Spanish</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/hindi" class="tag">
+              🇮🇳 <span>Hindi</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/portuguese" class="tag">
+              🇵🇹 <span>Portuguese</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/french" class="tag">
+              🇫🇷 <span>French</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/arabic" class="tag">
+              🇸🇦 <span>Arabic</span>{" "}
+            </a>{" "}
+            <a href="https://remoteok.com/hire-remotely/men" class="tag">
+              👨 <span>Men</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/women" class="tag">
+              👱‍♀️ <span>Women</span>{" "}
+            </a>
+            <a href="https://remoteok.com/hire-remotely/other" class="tag">
+              👱 <span>Other</span>{" "}
+            </a>
+          </div>
+        </div>
       </container>
       <div class="catch-emails" id="catch-emails" data-tag="">
         <div class="form">
@@ -347,12 +703,18 @@ function App() {
           <input type="hidden" class="source" value="" />
           <input type="hidden" class="tag" value="" />
           <div class="button action-subscribe">Subscribe</div>
-          <div class="action-close-catch-emails" onClick={closeCatchEmails}>×</div>
+          <div class="action-close-catch-emails" onClick={closeCatchEmails}>
+            ×
+          </div>
         </div>
       </div>
-      <a class="by-levelsio" target="_blank" href="https://twitter.com/cuongnguyenCNN">
-by @cuongnguyenCNN
-</a>
+      <a
+        class="by-levelsio"
+        target="_blank"
+        href="https://twitter.com/cuongnguyenCNN"
+      >
+        by @cuongnguyenCNN
+      </a>
     </div>
   );
 }

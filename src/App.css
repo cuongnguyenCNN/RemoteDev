@@ -695,3 +695,41 @@ select.order-by {
   font-weight: bold;
   text-decoration: none;
 }
+div.top-tags {
+  position: relative;
+  max-width: calc(1400px - 28px - 28px);
+  width: 100vw;
+  margin: 14px auto;
+  padding: 14px;
+  z-index: 2;
+  padding-left: 3.5px;
+  padding-right: 3.5px;
+  text-align: center;
+}
+.top-tags .tag, .box.profile .tag {
+  vertical-align: top;
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.075);
+  background: #fff;
+  display: inline-block;
+  padding: 3.5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 3.5px;
+  border-radius: 12px;
+  border-radius: 32px;
+  border: solid 1px #dddddd !important;
+  /* color: #696969; */
+  border-color: #ddd;
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 16px;
+  padding: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  /* margin: 7px; */
+  border: none;
+  box-shadow: var(--box-shadow-central);
+  cursor: cell;
+  line-height: 1.5;
+}
