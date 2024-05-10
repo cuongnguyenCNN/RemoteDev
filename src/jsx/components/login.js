@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import './signup.css'
 const formatStringToCamelCase = str => {
     const splitted = str.split("-");
