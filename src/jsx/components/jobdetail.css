@@ -52,10 +52,6 @@
     display: table;
 }
 .instructions {
-    margin: 28px auto;
-    width: calc(100% - 28px - 28px);
-}
-.instructions {
     border: 1px solid #ededed;
     border-radius: 12px;
     margin: 14px auto;
@@ -69,4 +65,11 @@
     border: 2px solid #ff4742;
     color: #fff;
     width: 100%;
+}
+.description {
+    padding: 28px;
+}
+.instructions, .requirements, .responsibilities, .description {
+    max-width: 900px;
+    margin: 0 auto;
 }
